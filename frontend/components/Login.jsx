@@ -45,7 +45,7 @@ const Login = () => {
     };
 
     return (
-        <div>
+        <div class="bgi">
             <Box sx={{
                 width: { xs: '100%', sm: '80%', md: 600 },
                 margin: 'auto',

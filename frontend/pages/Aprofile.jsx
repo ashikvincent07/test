@@ -27,7 +27,7 @@ const Aprofile = () => {
     const [updatedData, setUpdatedData] = useState({});
     const [logoutDialogOpen, setLogoutDialogOpen] = useState(false);
 
-    const defaultProfilePicture = 'https://th.bing.com/th/id/OIP.spVmqLEfQC9nkyEUsmJGWAHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7';
+    const defaultProfilePicture = 'https://cdn-icons-png.flaticon.com/512/7153/7153150.png';
 
     useEffect(() => {
         const fetchUserData = async () => {

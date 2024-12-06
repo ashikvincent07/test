@@ -79,7 +79,7 @@ const Signup1 = () => {
             const res = await axios.post("http://localhost:5000/api/signup", input);
             alert(res.data.message);
             setErrorMessage('');
-            navigate('/home');
+            navigate('/');
         } catch (error) {
             if (error.response && error.response.data) {
                 setErrorMessage(error.response.data.message === 'Email already registered'
@@ -92,7 +92,7 @@ const Signup1 = () => {
     };
 
     return (
-        <div>
+        <div class="bgi">
             <Box sx={{ width: { xs: '100%', sm: '80%', md: 600 }, margin: 'auto', textAlign: 'center', justifyContent: 'center', marginTop: { xs: '50px', md: '100px' }, padding: { xs: '0 20px', sm: '0' } }}>
                 <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: { xs: 'center', md: 'space-around' } }}>
                     <Box sx={{ minWidth: { xs: '100%', md: 300 }, backgroundColor: '#f57c00', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: { xs: '20px', md: '0' } }}>

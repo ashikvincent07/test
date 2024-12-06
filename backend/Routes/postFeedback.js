@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const Feedback = require('/ashik/backend/Model/feedback'); // Path remains unchanged
+const Feedback = require('../Model/feedback'); // Path remains unchanged
 
 const router = express.Router();
 

@@ -25,7 +25,7 @@ const Auser = () => {
     const [users, setUsers] = useState([]); // State to store user data
     const [openDialog, setOpenDialog] = useState(false); // State to control dialog visibility
     const [selectedUserId, setSelectedUserId] = useState(null); // State to store the selected user ID for deletion
-    const defaultImage = 'https://th.bing.com/th/id/OIP.spVmqLEfQC9nkyEUsmJGWAHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7'; // Default profile picture
+    const defaultImage = 'https://cdn-icons-png.flaticon.com/512/7153/7153150.png'; // Default profile picture
 
     // Fetch users when the component mounts
     useEffect(() => {
@@ -66,7 +66,7 @@ const Auser = () => {
     return (
         <Container maxWidth="lg">
             <Box sx={{ padding: '20px' }}>
-                <Typography variant="h4" gutterBottom align="center" color='#F57c00' sx={{ fontWeight: 'bold' }}>
+                <Typography variant="h4" gutterBottom align="center" color='white' sx={{ fontWeight: 'bold' }}>
                     User List
                 </Typography>
                 

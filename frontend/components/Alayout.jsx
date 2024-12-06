@@ -48,6 +48,7 @@ const Alayout = ({ children }) => {
     '/admin/users',
     '/admin/profile',
   ].includes(location.pathname);
+  
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -65,6 +66,7 @@ const Alayout = ({ children }) => {
   const handleLogoutCancel = () => {
     setLogoutDialogOpen(false);
   };
+  
 
   const menuItems = (
     <List>
@@ -76,6 +78,9 @@ const Alayout = ({ children }) => {
       </ListItem>
       <ListItem button component={Link} to="/admin/notifications" onClick={toggleDrawer(false)}>
         <ListItemText primary="Notifications" />
+      </ListItem>
+      <ListItem button component={Link} to="/admin/meet" onClick={toggleDrawer(false)}>
+        <ListItemText primary="meet" />
       </ListItem>
       <ListItem button component={Link} to="/admin/feedback" onClick={toggleDrawer(false)}>
         <ListItemText primary="Feedback" />
@@ -96,7 +101,8 @@ const Alayout = ({ children }) => {
           <AppBar
             position="fixed" // Set to fixed for top alignment
             style={{
-              backgroundColor: '#f57c00',
+              
+              backgroundColor:' rgb(30, 30, 80)',
               padding: '10px',
               boxShadow: 'none',
               // margin: '10px', // Remove this margin to align it to the top
@@ -114,6 +120,7 @@ const Alayout = ({ children }) => {
                 component="div"
                 sx={{
                   fontWeight: 'bold',
+                  fontFamily: '',
                   textAlign: { xs: 'center', sm: 'left' },
                   flexGrow: { xs: 1, sm: 0 },
                 }}
@@ -137,6 +144,8 @@ const Alayout = ({ children }) => {
                 </Button>
                 <Button component={Link} to="/admin/notifications" color="inherit" style={{ margin: '5px' }}>
                   Notifications
+                </Button><Button component={Link} to="" color="inherit" style={{ margin: '5px' }}>
+                  Meet
                 </Button>
                 <Button component={Link} to="/admin/feedback" color="inherit" style={{ margin: '5px' }}>
                   Feedback

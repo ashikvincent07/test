@@ -100,6 +100,7 @@ const Feedback = () => {
                 variant="contained"
                 component="label"
                 sx={{
+                    backgroundColor:'rgb(30, 30, 80)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -119,6 +120,7 @@ const Feedback = () => {
                 color="primary"
                 onClick={handleSubmit}
                 sx={{
+                    backgroundColor:'rgb(30, 30, 80)',
                     display: 'block',
                     width: '100%',
                 }}

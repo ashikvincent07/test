@@ -165,7 +165,7 @@ const Anotifications = () => {
               fullWidth
               sx={{ marginBottom: '10px' }}
             />
-            <Button type="submit" variant="contained" color="warning">
+            <Button type="submit" variant="contained" sx={{backgroundColor:"rgb(30, 30, 80)"}}>
               {editingNotification ? 'Update Notification' : 'Add Notification'}
             </Button>
           </form>

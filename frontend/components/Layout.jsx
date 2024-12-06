@@ -63,6 +63,9 @@ const Layout = ({ children }) => {
       <ListItem button component={Link} to="/home/notifications" onClick={toggleDrawer(false)}>
         <ListItemText primary="Notifications" />
       </ListItem>
+      <ListItem button component={Link} to="/home/meet" onClick={toggleDrawer(false)}>
+        <ListItemText primary="meet" />
+      </ListItem>
       <ListItem button component={Link} to="/home/feedback" onClick={toggleDrawer(false)}>
         <ListItemText primary="Feedback" />
       </ListItem>
@@ -80,7 +83,7 @@ const Layout = ({ children }) => {
           <AppBar
             position="fixed"
             style={{
-              backgroundColor: '#f57c00',
+              backgroundColor: ' rgb(30, 30, 80)',
               padding: '10px',
               boxShadow: 'none',
             }}
@@ -97,6 +100,7 @@ const Layout = ({ children }) => {
                 component="div"
                 sx={{
                   fontWeight: 'bold',
+                  fontFamily: '',
                   textAlign: { xs: 'center', sm: 'left' },
                   flexGrow: { xs: 1, sm: 0 },
                 }}
@@ -120,6 +124,9 @@ const Layout = ({ children }) => {
                 </Button>
                 <Button component={Link} to="/home/notifications" color="inherit" style={{ margin: '5px' }}>
                   Notifications
+                </Button>
+                <Button component={Link} to="" color="inherit" style={{ margin: '5px' }}>
+                  Join Meet
                 </Button>
                 <Button component={Link} to="/home/feedback" color="inherit" style={{ margin: '5px' }}>
                   Feedback

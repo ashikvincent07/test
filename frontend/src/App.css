@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 /* App.css */
 * {
@@ -11,7 +14,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('../images/ncasimage.jpg') no-repeat center center fixed;
+
+    background: rgb(69,60,228) ;
+    background: linear-gradient(200deg, rgba(69,60,228,1) 0%, rgba(29,25,95,1) 0%, rgba(60,52,198,1) 13%, rgba(54,47,180,1) 21%, rgba(50,44,166,1) 22%, rgba(47,40,153,1) 29%, rgba(51,44,167,1) 32%, rgba(43,37,140,1) 33%, rgba(31,26,102,1) 39%, rgba(40,34,132,1) 42%, rgba(37,32,123,1) 46%, rgba(33,28,109,1) 47%, rgba(28,24,93,1) 54%, rgba(36,31,118,1) 55%, rgba(49,42,162,1) 59%, rgba(23,19,75,1) 71%, rgba(45,38,148,1) 76%, rgba(0,0,0,1) 100%)  no-repeat center center fixed ;
     background-size: cover;
 }
+/* 
+.bgi{
+    background:url(../images/ncasimage.jpg) no-repeat center center fixed ;
+    background-size: cover;
+} */
+
+
+
+
 
